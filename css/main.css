@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --main-background-color: #684BB1;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --main-font-color: #FFF;
+    --button-hover-color: #E880E8;
+    --social-hover-color: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-width: 375px;
+    min-height: 100vh;
+    /**
+     * Background color value:  --main-background-color: #684BB1;
+     */
+    background-color: var(--main-background-color);
+    background-image: url('../images/bg-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    /**
+     * Font color value: --main-font-color: #FFF;
+     */
+    color: var(--main-font-color);
+}
+
+p {
+    /**
+     * Font family value: --body-font: 'Open Sans', sans-serif;
+     */
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Style */
+.header {
+    margin-bottom: 55px;
+    margin-bottom: 3.4375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo {
+    margin-top: 30px;
+    margin-top: 1.875rem;
+    margin-left: 36px;
+    margin-left: 2.25rem;
+    width: 127px;
+    width: 7.9375rem;
+}
+
+/* Main Style */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-block {
+    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
+    padding-right: 40px;
+    padding-right: 2.5rem;
+    padding-left: 40px;
+    padding-left: 2.5rem;
+}
+
+.illustration-block__image {
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    padding-right: 35px;
+    padding-right: 2.1875rem;
+    padding-left: 35px;
+    padding-left: 2.1875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section__headline {
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /**
+     * Font family value: --heading-font: 'Poppins', sans-serif;
+     */
+    font-family: var(--heading-font);
+}
+
+.section__copy,
+.section__button {
+    font-weight: 400;
+}
+
+.section__copy {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.section__button {
+    width: 200px;
+    width: 12.5rem;
+    height: 40px;
+    height: 2.5rem;
+    /**
+     * Background color value: --main-font-color: #FFF;
+     */
+    background-color: var(--main-font-color);
+    border-radius: 20px;
+    border-radius: 1.25rem;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    box-shadow: .0625rem .1875rem .3125rem rgba(0, 0, 0, 0.269022);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-size: .75rem;
+    /**
+     * Color value: --main-background-color: #684BB1;
+     */
+    color: var(--main-background-color);
+    transition: all .5s ease;
+}
+
+.section__button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--main-font-color);
+}
+
+.socials {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10.5px;
+}
+
+.socials p {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__link {
+    width: 28px;
+    height: 28px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__link-logo {
+    width: 12px;
+    height: 12px;
+    filter: invert(100%) sepia(7%) saturate(0%) hue-rotate(9deg) brightness(103%) contrast(105%);
+}
+
+.socials__link:hover {
+    filter: invert(51%) sepia(39%) saturate(3671%) hue-rotate(293deg) brightness(101%) contrast(101%);
+}
+
+/* Footer Style */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
